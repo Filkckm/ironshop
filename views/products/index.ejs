@@ -1,0 +1,7 @@
+<h1>List Products</h1>
+
+<ul>
+  <% products.forEach( (product) => { %>
+    <li><%= product.name %> - <%= product.price %> | <a href="/products/<%= product._id %>">show</a> | <a href="/products/<%= product._id %>/edit">edit</a> | <a href="/products/<%= product._id %>/delete">delete</a></li>
+  <% }) %>
+</ul>
